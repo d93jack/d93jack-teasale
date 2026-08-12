@@ -1,0 +1,4 @@
+openai>=2.0
+Markdown>=3.7
+weasyprint>=66
+

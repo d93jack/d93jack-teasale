@@ -1,0 +1,54 @@
+{
+  "portfolio_twd": 2000000,
+  "primary_markets": ["US", "Taiwan"],
+  "formal_exposures": [
+    {"symbol": "KLAC", "name": "KLA", "market": "US", "segment": "semiconductor equipment"},
+    {"symbol": "GEV", "name": "GE Vernova", "market": "US", "segment": "power equipment"},
+    {"symbol": "APH", "name": "Amphenol", "market": "US", "segment": "connectors"},
+    {"symbol": "NVT", "name": "nVent", "market": "US", "segment": "electrical infrastructure"},
+    {"symbol": "HUBB", "name": "Hubbell", "market": "US", "segment": "grid equipment"},
+    {"symbol": "POWL", "name": "Powell Industries", "market": "US", "segment": "electrical equipment"},
+    {"symbol": "CAMT", "name": "Camtek", "market": "US", "segment": "inspection and metrology"},
+    {"symbol": "MOD", "name": "Modine", "market": "US", "segment": "thermal management"},
+    {"symbol": "TSLA", "name": "Tesla", "market": "US", "segment": "EV and energy storage"},
+    {"symbol": "TSM/2330", "name": "TSMC ADR and Taiwan shares", "market": "US/Taiwan", "segment": "leading-edge foundry", "single_exposure": true},
+    {"symbol": "NVDA", "name": "NVIDIA", "market": "US", "segment": "AI accelerators"},
+    {"symbol": "AMD", "name": "AMD", "market": "US", "segment": "AI accelerators"},
+    {"symbol": "GOOG", "name": "Alphabet", "market": "US", "segment": "cloud and AI platform"},
+    {"symbol": "VOO", "name": "Vanguard S&P 500 ETF", "market": "US", "segment": "broad market ETF", "asset_type": "ETF"},
+    {"symbol": "VRT", "name": "Vertiv", "market": "US", "segment": "data-center power and cooling"},
+    {"symbol": "ASML", "name": "ASML", "market": "US ADR", "segment": "lithography"},
+    {"symbol": "MU", "name": "Micron", "market": "US", "segment": "memory and HBM"},
+    {"symbol": "AXTI", "name": "AXT", "market": "US", "segment": "compound semiconductor substrates"},
+    {"symbol": "AAOI", "name": "Applied Optoelectronics", "market": "US", "segment": "optical transceivers"},
+    {"symbol": "AEHR", "name": "Aehr Test Systems", "market": "US", "segment": "burn-in and test"},
+    {"symbol": "GLW", "name": "Corning", "market": "US", "segment": "optical fiber and materials"},
+    {"symbol": "DRAM", "name": "Roundhill Memory ETF", "market": "US", "segment": "memory", "asset_type": "ETF"},
+    {"symbol": "2383", "name": "台光電", "market": "Taiwan", "segment": "copper-clad laminate"},
+    {"symbol": "3711", "name": "日月光投控", "market": "Taiwan", "segment": "advanced packaging and test"},
+    {"symbol": "3665", "name": "貿聯-KY", "market": "Taiwan", "segment": "interconnect"},
+    {"symbol": "3017", "name": "奇鋐", "market": "Taiwan", "segment": "cooling"},
+    {"symbol": "1519", "name": "華城", "market": "Taiwan", "segment": "power transformers"},
+    {"symbol": "2368", "name": "金像電", "market": "Taiwan", "segment": "PCB"},
+    {"symbol": "3653", "name": "健策", "market": "Taiwan", "segment": "thermal components"},
+    {"symbol": "3131", "name": "弘塑", "market": "Taiwan OTC", "segment": "advanced packaging equipment"},
+    {"symbol": "2408", "name": "南亞科", "market": "Taiwan", "segment": "DRAM"},
+    {"symbol": "4919", "name": "新唐", "market": "Taiwan", "segment": "MCU and semiconductor"},
+    {"symbol": "0050", "name": "元大台灣50", "market": "Taiwan", "segment": "large-cap ETF", "asset_type": "ETF"},
+    {"symbol": "1301", "name": "台塑", "market": "Taiwan", "segment": "petrochemicals"},
+    {"symbol": "1303", "name": "南亞", "market": "Taiwan", "segment": "electronic materials and petrochemicals"},
+    {"symbol": "2301", "name": "光寶科", "market": "Taiwan", "segment": "power supplies"},
+    {"symbol": "2308", "name": "台達電", "market": "Taiwan", "segment": "power and cooling"},
+    {"symbol": "6505", "name": "台塑化", "market": "Taiwan", "segment": "refining and petrochemicals"},
+    {"symbol": "6739", "name": "竹陞科技", "market": "Taiwan OTC", "segment": "semiconductor automation"},
+    {"symbol": "2634", "name": "漢翔", "market": "Taiwan", "segment": "aerospace and defense"}
+  ],
+  "research_pool": [
+    "8033 雷虎", "AMKR", "TER", "ONTO", "COHR", "LITE", "CIEN", "AVGO", "MRVL", "CRDO",
+    "ANET", "ETN", "PWR", "CEG", "VST", "2449 京元電子", "6223 旺矽", "6515 穎崴", "3583 辛耘", "6640 均華"
+  ],
+  "supply_chain_sentinels": [
+    "中國長鑫 CXMT", "寒武紀 688256.SH", "Prysmian PRY.MI", "古河電工 5801.T"
+  ]
+}
+
