@@ -11,1386 +11,1558 @@
     blockquote { border-left: 4px solid #1597a3; background: #eaf7f6; margin: 10px 0; padding: 8px 12px; }
     a { color: #1769aa; text-decoration: none; overflow-wrap: anywhere; }
     code { font-family: monospace; font-size: 8pt; }
-    </style></head><body><h1>全球市場與 AI 瓶頸晚報｜<strong>資料驗證暫停版</strong></h1>
-<p><strong>用途：台股與亞洲盤後／美股開盤前（惟本次時間參數存在衝突）</strong><br />
-<strong>報告生成：2026-09-15 00:57:19 Asia/Taipei</strong><br />
-<strong>嚴格資料截止：2026-09-15 00:57:19 Asia/Taipei</strong><br />
-<strong>可配置資金：NT$2,000,000</strong><br />
-<strong>性質：研究與風險管理工具；非保證報酬、非個別投資勸誘。</strong></p>
+    </style></head><body><h1>全球市場與 AI 瓶頸晚報</h1>
+<p><strong>版別：每日晚報｜用途：台股與亞洲盤後／美股盤中風險檢查</strong><br />
+<strong>生成時刻：2026-09-15 23:32:56（Asia/Taipei）</strong><br />
+<strong>嚴格資料截止：2026-09-15 23:32:56（Asia/Taipei）</strong><br />
+<strong>投資性質：研究與風險管理工具，不構成保證報酬、個別投資勸誘或交易指令。</strong>  </p>
+<blockquote>
+<p><strong>時間一致性註記：</strong>本版指定用途寫為「美股開盤前」，但截止時刻換算為 <strong>2026-09-15 11:32:56（美東夏令時間，EDT）</strong>，美股已於 09:30 EDT 開盤。因此，本報美股數字僅能視為<strong>截止前盤中快照</strong>；美股「正式收盤」仍以 <strong>2026-09-14（EDT）</strong> 為最近可採用的完整收盤基準，2026-09-15 的正式收盤不得倒灌。  </p>
+</blockquote>
 <hr />
-<h2>0. 本版有效性聲明：時間截點與報告用途衝突</h2>
-<p>本版<strong>不得作為交易指令</strong>，原因如下：</p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>判定</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>截止時間</td>
-<td>2026-09-15 00:57:19，台北時間</td>
-</tr>
-<tr>
-<td>對應美東時間</td>
-<td>2026-09-14 12:57:19 EDT（美股正常交易時段內）</td>
-</tr>
-<tr>
-<td>台灣／日本／中國／香港市場</td>
-<td>2026-09-14 正式收盤已應可取得，但本次未提供可稽核的收盤資料快照</td>
-</tr>
-<tr>
-<td>美國市場</td>
-<td>截止時點仍在盤中，<strong>不得以 2026-09-14 美股正式收盤價、盤後資訊或當日完整成交量倒灌</strong></td>
-</tr>
-<tr>
-<td>與「美股開盤前」用途的一致性</td>
-<td><strong>不一致</strong>；美股於該時點已開盤約 3 小時 27 分</td>
-</tr>
-<tr>
-<td>正式結論</td>
-<td>無法在不猜測、不倒灌資料的前提下，產出合格的 Risk-on／中性／Risk-off／危機正式分數、個股估值區間與可執行配置。</td>
-</tr>
-</tbody>
-</table>
-<p>美國財政部日債券殖利率資料係依紐約聯邦準備銀行於每個營業日約美東 15:30 取得的報價推算；因此在本次美東 12:57 的資料截點，任何使用該日完整美債正式收盤殖利率的結論都屬於截止後倒灌。(<a href="https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics?utm_source=openai">home.treasury.gov</a>)</p>
-<p><strong>資料治理優先順序：</strong><br />
-<code>嚴格截止時間與來源可稽核性</code> ＞ <code>必填欄位完整性</code> ＞ <code>產出投資行動</code>。<br />
-故以下所有未能於指定截點前驗證的數據，一律標示為<strong>待核</strong>，不以猜測數字補足。</p>
-<hr />
-<h1>1. 每日市場狀態儀表板</h1>
-<h2>1.1 全球、美國、台灣市場狀態</h2>
+<h2>一、執行摘要</h2>
+<h3>今日正式結論</h3>
 <table>
 <thead>
 <tr>
 <th>市場</th>
-<th style="text-align: right;">正式狀態</th>
-<th style="text-align: right;">判斷分數（0–100）</th>
-<th>證據完整性</th>
-<th>現金政策</th>
+<th style="text-align: right;">狀態</th>
+<th style="text-align: right;">分數*</th>
 <th>操作權限</th>
+<th style="text-align: right;">建議現金區間</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>全球</td>
-<td style="text-align: right;"><strong>資料待核／不可判定</strong></td>
-<td style="text-align: right;">N/A</td>
-<td>不足</td>
-<td>暫停依市場狀態配置</td>
-<td>不建立一般新倉</td>
+<td style="text-align: right;"><strong>Risk-off</strong></td>
+<td style="text-align: right;"><strong>61 / 100</strong></td>
+<td>不追價；僅保留防守型核心、分批試單</td>
+<td style="text-align: right;">45%–70%</td>
 </tr>
 <tr>
 <td>美國</td>
-<td style="text-align: right;"><strong>盤中資料截點／不可判定</strong></td>
-<td style="text-align: right;">N/A</td>
-<td>不足；不得使用美股日終資料</td>
-<td>暫停依市場狀態配置</td>
-<td>不建立一般新倉</td>
+<td style="text-align: right;"><strong>Risk-off</strong></td>
+<td style="text-align: right;"><strong>58 / 100</strong></td>
+<td>大盤與小型股走弱、長債價格下跌；半導體相對抗跌但不代表全面風險解除</td>
+<td style="text-align: right;">45%–65%</td>
 </tr>
 <tr>
 <td>台灣</td>
-<td style="text-align: right;"><strong>收盤資料待核／不可判定</strong></td>
-<td style="text-align: right;">N/A</td>
-<td>不足；缺少可稽核收盤快照</td>
-<td>暫停依市場狀態配置</td>
-<td>不建立一般新倉</td>
+<td style="text-align: right;"><strong>Risk-off</strong></td>
+<td style="text-align: right;"><strong>64 / 100</strong></td>
+<td>台股正式收低；僅可用正常預定部位的 1/3 做條件式試單</td>
+<td style="text-align: right;">50%–70%</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><strong>說明：</strong>「N/A」不代表 0 分、也不代表負面評級；其意義是「在本報告的嚴格資料截止條件下，無法以可追溯來源完成正式判定」。</p>
-</blockquote>
-<p>臺灣證交所提供加權指數與市場統計資訊查詢，但本版未取得可鎖定於本次截止時間前的完整收盤快照，故不填入指數點位與漲跌幅。(<a href="https://www.twse.com.tw/IIH2/zh/market/stock.html?utm_source=openai">twse.com.tw</a>)</p>
+<p>*分數越高代表風險壓力越大；55–69 為 Risk-off，70 以上為危機。</p>
+<p><strong>總體判斷：</strong><br />
+1. 美國盤中 S&amp;P 500、Nasdaq 100 與 Russell 2000 均下跌，小型股跌幅較大；SOX 代理指數則相對上升，顯示資金仍集中於 AI／半導體少數龍頭，而非全面 Risk-on。<br />
+2. 美國長天期公債 ETF 下跌、美元走強、原油明顯走高，形成「殖利率壓力＋能源成本壓力＋風險偏好轉弱」組合。<br />
+3. 台股 2026 年 9 月 15 日加權指數收 <strong>45,511.49 點，下跌 351.03 點</strong>；台積電收 <strong>NT$2,385</strong>、上漲 NT$5，但無法抵銷市場整體風險趨避。<br />
+4. 因美股盤中半導體強於大盤，<strong>AI 論點尚未失效</strong>；但市場廣度、利率與油價不支持提高整體曝險。現階段優先順序為：<strong>現金、核心品質、分散瓶頸、等待估值安全邊際。</strong> (<a href="https://money.udn.com/money/story/12509/9755786?utm_source=openai">money.udn.com</a>)</p>
 <hr />
-<h2>1.2 固定跨資產監控表</h2>
+<h2>二、資料時點、正式收盤與來源規格</h2>
 <table>
 <thead>
 <tr>
-<th>資產／指標</th>
-<th>正式日期／時區</th>
-<th>狀態</th>
-<th style="text-align: right;">本版數值</th>
-<th>對 AI／台美股影響</th>
-<th>資料處理</th>
+<th>市場／資產</th>
+<th>可使用資料日期</th>
+<th>本版採用狀態</th>
+<th>備註</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>S&amp;P 500</td>
-<td>2026-09-14，美東盤中</td>
-<td>未正式收盤</td>
-<td style="text-align: right;">待核</td>
-<td>美國風險偏好與大型權值折現率</td>
-<td>不採用盤後或收盤價</td>
+<td>台股上市、上櫃</td>
+<td>2026-09-15，台北正式收盤</td>
+<td>正式收盤</td>
+<td>個別股完整收盤價部分待官方逐檔核驗</td>
 </tr>
 <tr>
-<td>Nasdaq 100</td>
-<td>2026-09-14，美東盤中</td>
-<td>未正式收盤</td>
-<td style="text-align: right;">待核</td>
-<td>AI 平台、雲端與半導體風險偏好</td>
-<td>待次版核驗</td>
+<td>日本、香港、中國</td>
+<td>2026-09-15，亞洲市場收盤</td>
+<td>部分待核</td>
+<td>本版僅作風險傳導，不提供直接交易指令</td>
 </tr>
 <tr>
-<td>SOX</td>
-<td>2026-09-14，美東盤中</td>
-<td>未正式收盤</td>
-<td style="text-align: right;">待核</td>
-<td>AI 半導體景氣與設備鏈主指標</td>
-<td>待次版核驗</td>
-</tr>
-<tr>
-<td>Russell 2000</td>
-<td>2026-09-14，美東盤中</td>
-<td>未正式收盤</td>
-<td style="text-align: right;">待核</td>
-<td>廣度、融資壓力與景氣敏感度</td>
-<td>待次版核驗</td>
-</tr>
-<tr>
-<td>台灣加權</td>
-<td>2026-09-14，台北收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>台股大型權值、2330 與電子資金面</td>
-<td>待官方收盤快照</td>
-</tr>
-<tr>
-<td>櫃買指數</td>
-<td>2026-09-14，台北收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>中小型 AI 零組件與設備風險偏好</td>
-<td>待官方收盤快照</td>
-</tr>
-<tr>
-<td>台灣電子／半導體</td>
-<td>2026-09-14，台北收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>AI 供應鏈相對強弱</td>
-<td>待官方收盤快照</td>
-</tr>
-<tr>
-<td>日經 225</td>
-<td>2026-09-14，東京收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>設備、材料、電網與匯率傳導</td>
+<td>歐洲</td>
+<td>2026-09-15，歐洲盤中／收盤待核</td>
 <td>待核</td>
+<td>不以前述未核資料做正式配置依據</td>
 </tr>
 <tr>
-<td>恒生指數</td>
-<td>2026-09-14，香港收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>中國需求、科技與風險情緒</td>
-<td>待核</td>
+<td>美股</td>
+<td>2026-09-14 正式收盤；2026-09-15 截止前盤中</td>
+<td>盤中快照</td>
+<td>截止前最新可得盤中時間約為 23:18 台北時間</td>
 </tr>
 <tr>
-<td>滬深 300</td>
-<td>2026-09-14，上海／深圳收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>中國資本支出、記憶體與政策傳導</td>
-<td>待核</td>
-</tr>
-<tr>
-<td>Euro Stoxx 50</td>
-<td>2026-09-14，歐洲收盤</td>
-<td>應可核驗</td>
-<td style="text-align: right;">待核</td>
-<td>工業資本支出、電網與能源設備需求</td>
-<td>待核</td>
-</tr>
-<tr>
-<td>美元指數 DXY</td>
-<td>2026-09-14，美東盤中</td>
-<td>盤中</td>
-<td style="text-align: right;">待核</td>
-<td>成長股估值、商品與新興市場風險</td>
-<td>待次版核驗</td>
-</tr>
-<tr>
-<td>USD/TWD</td>
-<td>2026-09-15 00:57 台北</td>
-<td>盤中／報價來源待核</td>
-<td style="text-align: right;">待核</td>
-<td>美股台幣報酬與匯率避險判斷</td>
-<td>不作匯率曝險調整</td>
-</tr>
-<tr>
-<td>美國公債殖利率</td>
-<td>2026-09-14，美東盤中</td>
-<td>未正式日終</td>
-<td style="text-align: right;">待核</td>
-<td>AI 成長股估值與長久期資產折現率</td>
-<td>不採用當日完整日終資料</td>
-</tr>
-<tr>
-<td>投資級／高收益信用利差</td>
-<td>最近可用正式日待核</td>
-<td>待核</td>
-<td style="text-align: right;">待核</td>
-<td>流動性、景氣風險與槓桿壓力</td>
-<td>待核</td>
-</tr>
-<tr>
-<td>黃金</td>
-<td>2026-09-14，盤中／收盤待核</td>
-<td>待核</td>
-<td style="text-align: right;">待核</td>
-<td>防禦需求、實質利率與政策不確定性</td>
-<td>待核</td>
-</tr>
-<tr>
-<td>原油</td>
-<td>2026-09-14，盤中／收盤待核</td>
-<td>待核</td>
-<td style="text-align: right;">待核</td>
-<td>通膨、運輸與能源資本支出</td>
-<td>待核</td>
-</tr>
-<tr>
-<td>銅</td>
-<td>2026-09-14，盤中／收盤待核</td>
-<td>待核</td>
-<td style="text-align: right;">待核</td>
-<td>電網、資料中心、工業需求與中國景氣</td>
-<td>待核</td>
+<td>匯率、利率、信用利差</td>
+<td>2026-09-15 截止前</td>
+<td>部分代理指標</td>
+<td>USD/TWD、實際美債殖利率、OAS 待官方序列核驗</td>
 </tr>
 </tbody>
 </table>
-<p>信用利差應以具明確日頻率與收盤定義的序列核驗；FRED 所載 ICE BofA 公司債 OAS 為日頻收盤資料，適合用於次一完整報告確認，不宜在本次盤中截點替代為「當日正式結果」。(<a href="https://fred.stlouisfed.org/graph/?g=PmO0&amp;utm_source=openai">fred.stlouisfed.org</a>)</p>
+<p><strong>優先資料來源：</strong></p>
+<ul>
+<li>台灣證券交易所市場資訊：<a href="https://www.twse.com.tw/zh/trading/historical/mi-index.html">https://www.twse.com.tw/zh/trading/historical/mi-index.html</a>  </li>
+<li>櫃買中心市場資訊：<a href="https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote.php">https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote.php</a>  </li>
+<li>美國 SEC EDGAR 公司申報：<a href="https://www.sec.gov/edgar/search/">https://www.sec.gov/edgar/search/</a>  </li>
+<li>美國財政部殖利率曲線：<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates">https://home.treasury.gov/resource-center/data-chart-center/interest-rates</a>  </li>
+<li>FRED 信用利差與金融條件資料：<a href="https://fred.stlouisfed.org/">https://fred.stlouisfed.org/</a>  </li>
+<li>Vanguard VOO 基金官方頁：<a href="https://investor.vanguard.com/investment-products/etfs/profile/voo">https://investor.vanguard.com/investment-products/etfs/profile/voo</a>  </li>
+<li>元大台灣 50 ETF 官方頁：<a href="https://www.yuantaetfs.com/product/detail/0050">https://www.yuantaetfs.com/product/detail/0050</a>  </li>
+<li>Roundhill Memory ETF 官方頁：<a href="https://www.roundhillinvestments.com/etf/dram">https://www.roundhillinvestments.com/etf/dram</a>  </li>
+</ul>
 <hr />
-<h1>2. 雷達：本版僅列重大資料治理變化</h1>
+<h2>三、跨資產儀表板與海外傳導</h2>
+<h3>1. 截止前市場快照</h3>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th style="text-align: right;">截止前狀態</th>
+<th>對台美 AI 股影響</th>
+<th>判讀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S&amp;P 500（SPY 代理）</td>
+<td style="text-align: right;">-0.49% 盤中</td>
+<td>-2</td>
+<td>大盤風險偏好轉弱</td>
+</tr>
+<tr>
+<td>Nasdaq 100（QQQ 代理）</td>
+<td style="text-align: right;">-0.51% 盤中</td>
+<td>-2</td>
+<td>成長股未能獨立轉強</td>
+</tr>
+<tr>
+<td>SOX（SOXX 代理）</td>
+<td style="text-align: right;">+0.38% 盤中</td>
+<td>+1</td>
+<td>半導體相對強勢，但屬窄幅領漲</td>
+</tr>
+<tr>
+<td>Russell 2000（IWM 代理）</td>
+<td style="text-align: right;">-1.17% 盤中</td>
+<td>-3</td>
+<td>小型股、流動性與市場廣度惡化</td>
+</tr>
+<tr>
+<td>美元（UUP 代理）</td>
+<td style="text-align: right;">+0.14% 盤中</td>
+<td>-1</td>
+<td>對新興市場及台幣資產偏逆風</td>
+</tr>
+<tr>
+<td>長天期美債（TLT 代理）</td>
+<td style="text-align: right;">-0.23% 盤中</td>
+<td>-2</td>
+<td>長端殖利率上行壓抑高估值資產</td>
+</tr>
+<tr>
+<td>高收益債（HYG 代理）</td>
+<td style="text-align: right;">-0.10% 盤中</td>
+<td>-1</td>
+<td>尚非信用危機，但風險補償惡化</td>
+</tr>
+<tr>
+<td>黃金（GLD 代理）</td>
+<td style="text-align: right;">+0.07% 盤中</td>
+<td>-1</td>
+<td>防守需求仍在</td>
+</tr>
+<tr>
+<td>原油（USO 代理）</td>
+<td style="text-align: right;">+2.53% 盤中</td>
+<td>-3</td>
+<td>通膨、運輸、能源與利率風險上升</td>
+</tr>
+<tr>
+<td>銅（CPER 代理）</td>
+<td style="text-align: right;">+0.50% 盤中</td>
+<td>+1</td>
+<td>電網、資料中心基建需求尚有支撐</td>
+</tr>
+<tr>
+<td>台灣加權</td>
+<td style="text-align: right;">45,511.49，-0.77%</td>
+<td>-3</td>
+<td>正式收低，風險偏好不足</td>
+</tr>
+<tr>
+<td>台積電 2330</td>
+<td style="text-align: right;">NT$2,385，+NT$5</td>
+<td>+1</td>
+<td>龍頭抗跌，但非全市場轉強訊號</td>
+</tr>
+<tr>
+<td>日經、恒生、滬深300、Euro Stoxx 50</td>
+<td style="text-align: right;">待核</td>
+<td>0</td>
+<td>不以未核數字作交易依據</td>
+</tr>
+</tbody>
+</table>
+<p>美股截至資料截止時，SPY、QQQ、IWM 同步走低，SOXX 卻上漲，代表資金偏向擁擠於半導體與 AI 龍頭；同時原油上漲、長債下跌及美元偏強，不利高槓桿、低獲利或高度依賴估值擴張的成長股。 </p>
+<h3>2. 海外及跨資產影響值</h3>
+<table>
+<thead>
+<tr>
+<th>傳導項目</th>
+<th style="text-align: right;">影響值（-5 至 +5）</th>
+<th>受影響環節</th>
+<th>風控含義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美股市場廣度轉弱</td>
+<td style="text-align: right;">-3</td>
+<td>小型設備、光通訊、早期瓶頸</td>
+<td>降低 AEHR、AXTI、AAOI 類單筆風險</td>
+</tr>
+<tr>
+<td>半導體相對大盤強勢</td>
+<td style="text-align: right;">+2</td>
+<td>NVDA、TSM、KLAC、ASML、MU</td>
+<td>可持續追蹤，不等於可追價</td>
+</tr>
+<tr>
+<td>長端利率壓力</td>
+<td style="text-align: right;">-3</td>
+<td>高 PE 電力設備、散熱、AI 軟硬體</td>
+<td>對 GEV、VRT、MOD、TSLA 的估值分數扣分</td>
+</tr>
+<tr>
+<td>原油上升</td>
+<td style="text-align: right;">-3</td>
+<td>化工、運輸、通膨敏感產業</td>
+<td>對台塑、南亞、台塑化雙面影響，優先視需求與裂解價差</td>
+</tr>
+<tr>
+<td>銅偏強</td>
+<td style="text-align: right;">+2</td>
+<td>電網、變壓器、電力設備</td>
+<td>對 GEV、HUBB、NVT、1519 華城相對正面</td>
+</tr>
+<tr>
+<td>中國 AI／記憶體政策競爭</td>
+<td style="text-align: right;">-2</td>
+<td>DRAM、成熟製程、部分 IC</td>
+<td>對 MU、2408、4919 的長期供給風險持續監控</td>
+</tr>
+<tr>
+<td>USD/TWD</td>
+<td style="text-align: right;">待核</td>
+<td>美股台幣報酬</td>
+<td>未核前不將匯兌假設納入新增部位報酬承諾</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、雷達：本次僅列五項重要變化</h2>
 <ol>
-<li><strong>美股時間狀態衝突：</strong>本版資料截止落在美東盤中，不符合「美股開盤前」定位。  </li>
-<li><strong>正式收盤限制：</strong>美股、美元、殖利率、油金銅等多項指標不可使用截止後的完整日終數據。  </li>
-<li><strong>無前版資料庫：</strong>未提供前次報告的分數、評級、持倉、成本與驗證結果，無法判定「分數是否變動超過 5 分」或檢查前判斷錯誤。  </li>
-<li><strong>估值輸入待核：</strong>40 個正式曝險單位缺少本截止時點可稽核股價、匯率、最新財報後指引、估值倍數與市場共識快照。  </li>
-<li><strong>結論：</strong>本版不湊數推薦；維持「資料驗證暫停」而非將未知資料錯誤視為 Risk-off 或危機訊號。</li>
+<li><strong>市場廣度惡化：</strong>Russell 2000 盤中跌幅大於大型股，表示資金不是全面回流風險資產。  </li>
+<li><strong>半導體與大盤背離：</strong>SOXX 盤中上漲、SPY／QQQ 下跌；此結構支持龍頭品質但提高擁擠交易風險。  </li>
+<li><strong>原油跳升：</strong>USO 盤中上漲逾 2%，加上長債下跌，通膨再定價是本週首要總體風險。  </li>
+<li><strong>台股收盤偏弱：</strong>加權指數下跌 351.03 點，雖台積電收漲，但電子供應鏈不宜以單一龍頭表現推論全面風險解除。  </li>
+<li><strong>記憶體仍是高波動瓶頸：</strong>MU 及 DRAM ETF 截止前相對走強，但記憶體曝險應與南亞科合併計算，禁止因短線價格強勢忽略週期與重疊風險。 (<a href="https://money.udn.com/money/story/12509/9755786?utm_source=openai">money.udn.com</a>)</li>
 </ol>
 <hr />
-<h1>3. 前次判斷：新證據、錯誤與未驗證事項</h1>
+<h2>五、前次判斷：新證據與錯誤紀錄</h2>
+<blockquote>
+<p><strong>前次可比正式版：待核。</strong> 本次為本系統所見的基準建檔版，無法誠實計算「前次總分變化」或宣稱先前判斷正確。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
 <th>項目</th>
-<th>結果</th>
+<th>本次新增證據</th>
+<th>對原假設的影響</th>
+<th>錯誤／限制紀錄</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>前次正式報告基準</td>
-<td>未提供／待核</td>
+<td>AI 龍頭相對強勢</td>
+<td>SOXX 盤中相對 SPY、QQQ 抗跌</td>
+<td>品質論點暫時維持</td>
+<td><strong>不可把相對強勢誤判為風險全面解除</strong></td>
 </tr>
 <tr>
-<td>前次市場狀態</td>
-<td>待核</td>
+<td>電網／電力基建</td>
+<td>銅偏強，但利率壓力仍高</td>
+<td>需求論點維持，估值折現率不利</td>
+<td>過去若只看訂單而忽略估值，將造成回撤放大</td>
 </tr>
 <tr>
-<td>前次個股 Q／V／C／M 分數</td>
-<td>待核</td>
+<td>記憶體</td>
+<td>MU、DRAM ETF 盤中偏強</td>
+<td>產業循環仍具催化</td>
+<td>將 DRAM ETF、MU、2408 分開計算會低估高度相關性</td>
 </tr>
 <tr>
-<td>前次配置與現金比率</td>
-<td>待核</td>
+<td>台灣供應鏈</td>
+<td>台積電收漲但大盤收跌</td>
+<td>龍頭護城河無變</td>
+<td>不能以 2330 單日表現代表台股電子全面轉強</td>
 </tr>
 <tr>
-<td>可驗證的正確判斷</td>
-<td>無法判定</td>
-</tr>
-<tr>
-<td>可辨識的錯誤或偏誤</td>
-<td>無法判定；不得假設前版正確</td>
-</tr>
-<tr>
-<td>尚未驗證的事項</td>
-<td>全數待建立基準資料庫後追蹤</td>
+<td>總體</td>
+<td>油價上升、債券走弱、美元偏強</td>
+<td>提高現金與試單門檻</td>
+<td>若忽略利率與油價共振，15% 最大可接受回撤目標將失守</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1>4. 40 個正式曝險單位完整掃描</h1>
-<p><strong>評分欄位規則：</strong><br />
-- <code>Q</code>：瓶頸品質<br />
-- <code>V</code>：估值吸引力<br />
-- <code>C</code>：催化劑<br />
-- <code>M</code>：市場／技術<br />
-- 本版 <code>N/A</code>＝嚴格資料截點下無法完成可稽核正式評分，<strong>並非 0 分</strong>。<br />
-- 因無分數、估值與催化驗證，本版所有標的均為：<strong>不新增、不中途追價、不建立試單。</strong></p>
+<h2>六、40 個正式曝險單位：完整掃描表</h2>
+<p><strong>評分定義：</strong><br />
+- <strong>Q</strong>＝瓶頸品質／護城河；<strong>V</strong>＝估值吸引力；<strong>C</strong>＝催化劑；<strong>M</strong>＝市場與技術面。<br />
+- 「基準版」代表無前次可比報告；非正式調評。<br />
+- 台股個別收盤價除 2330 外，於本版截止前未完成官方逐檔核驗者一律標示 <strong>待核</strong>。<br />
+- 美國價格為 2026-09-15 約 23:13–23:18（台北時間）盤中快照，<strong>非正式收盤價</strong>。 </p>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;">#</th>
-<th>代號／單位</th>
-<th>市場</th>
-<th>主題</th>
+<th>單位</th>
+<th style="text-align: right;">截止前價格／正式收盤</th>
 <th style="text-align: right;">Q</th>
 <th style="text-align: right;">V</th>
 <th style="text-align: right;">C</th>
 <th style="text-align: right;">M</th>
-<th>本版正式評級</th>
-<th>短期 0–8週</th>
-<th>中期 2–12月</th>
-<th>長期 1–5年</th>
+<th>正式狀態</th>
+<th>短／中／長期行動</th>
 <th>相較前次</th>
-<th>布局／失效狀態</th>
 <th>下一驗證日</th>
+<th>布局／失效條件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">1</td>
-<td>KLAC｜KLA</td>
-<td>US</td>
-<td>半導體設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>KLAC</td>
+<td style="text-align: right;">US$166.79 盤中</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">58</td>
+<td>觀察</td>
+<td>等回檔／中期持有／長期核心候選</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>先進製程設備支出下修為失效訊號</td>
 </tr>
 <tr>
-<td style="text-align: right;">2</td>
-<td>GEV｜GE Vernova</td>
-<td>US</td>
-<td>電力設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>GEV</td>
+<td style="text-align: right;">US$878.35 盤中</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">55</td>
+<td>小額試單</td>
+<td>不追價／中期布局／長期持有</td>
+<td>基準版</td>
+<td>2026-10-28</td>
+<td>電網訂單、利潤率未兌現則降評</td>
 </tr>
 <tr>
-<td style="text-align: right;">3</td>
-<td>APH｜Amphenol</td>
-<td>US</td>
-<td>連接器</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>APH</td>
+<td style="text-align: right;">US$77.25 盤中</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">57</td>
+<td>正常布局</td>
+<td>分批／持有／核心候選</td>
+<td>基準版</td>
+<td>2026-10-28</td>
+<td>AI 互連成長與毛利率惡化</td>
 </tr>
 <tr>
-<td style="text-align: right;">4</td>
-<td>NVT｜nVent</td>
-<td>US</td>
-<td>電力基礎設施</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>NVT</td>
+<td style="text-align: right;">US$147.53 盤中</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">56</td>
+<td>小額試單</td>
+<td>等估值／中期觀察／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>資料中心電力需求下修</td>
 </tr>
 <tr>
-<td style="text-align: right;">5</td>
-<td>HUBB｜Hubbell</td>
-<td>US</td>
-<td>電網設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>HUBB</td>
+<td style="text-align: right;">US$438.63 盤中</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">54</td>
+<td>觀察</td>
+<td>不追價／中期布局候選／長期持有</td>
+<td>基準版</td>
+<td>2026-10-27</td>
+<td>公用事業資本支出顯著縮減</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td>POWL｜Powell Industries</td>
-<td>US</td>
-<td>電力設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>POWL</td>
+<td style="text-align: right;">US$170.22 盤中</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">53</td>
+<td>小額試單</td>
+<td>僅 1/3 試單／中期觀察／非核心</td>
+<td>基準版</td>
+<td>2026-11-04</td>
+<td>專案延遲、訂單能見度下降</td>
 </tr>
 <tr>
-<td style="text-align: right;">7</td>
-<td>CAMT｜Camtek</td>
-<td>US</td>
-<td>檢測／量測</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>CAMT</td>
+<td style="text-align: right;">US$131.87 盤中</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">48</td>
+<td>觀察</td>
+<td>不追價／等待訂單／長期觀察</td>
+<td>基準版</td>
+<td>2026-11-05</td>
+<td>先進封裝資本支出遞延</td>
 </tr>
 <tr>
-<td style="text-align: right;">8</td>
-<td>MOD｜Modine</td>
-<td>US</td>
-<td>熱管理</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>MOD</td>
+<td style="text-align: right;">US$179.39 盤中</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">47</td>
+<td>觀察</td>
+<td>暫不新倉／中期等回檔／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>資料中心散熱毛利未提升</td>
 </tr>
 <tr>
-<td style="text-align: right;">9</td>
-<td>TSLA｜Tesla</td>
-<td>US</td>
-<td>EV／儲能</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">10</td>
-<td>TSM／2330｜TSMC</td>
-<td>US／TW</td>
-<td>先進製程晶圓代工</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td><strong>ADR 與 2330 合併計為單一曝險</strong></td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">11</td>
-<td>NVDA｜NVIDIA</td>
-<td>US</td>
-<td>AI 加速器</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">12</td>
-<td>AMD｜AMD</td>
-<td>US</td>
-<td>AI 加速器</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">13</td>
-<td>GOOG｜Alphabet</td>
-<td>US</td>
-<td>雲端／AI 平台</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">14</td>
-<td>VOO｜Vanguard S&amp;P 500 ETF</td>
-<td>US</td>
-<td>大盤 ETF</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>ETF 資料待核</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">15</td>
-<td>VRT｜Vertiv</td>
-<td>US</td>
-<td>資料中心電力／冷卻</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">16</td>
-<td>ASML｜ASML ADR</td>
-<td>US</td>
-<td>微影設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">17</td>
-<td>MU｜Micron</td>
-<td>US</td>
-<td>記憶體／HBM</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>與 DRAM、2408 重疊待計</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">18</td>
-<td>AXTI｜AXT</td>
-<td>US</td>
-<td>化合物半導體基板</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>高風險早期瓶頸，待核</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">19</td>
-<td>AAOI｜Applied Optoelectronics</td>
-<td>US</td>
-<td>光收發模組</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>高風險早期瓶頸，待核</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">20</td>
-<td>AEHR｜Aehr Test Systems</td>
-<td>US</td>
-<td>老化測試</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>高風險早期瓶頸，待核</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">21</td>
-<td>GLW｜Corning</td>
-<td>US</td>
-<td>光纖／材料</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">22</td>
-<td>DRAM｜Roundhill Memory ETF</td>
-<td>US</td>
-<td>記憶體 ETF</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>與 MU、2408 重疊待計</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">23</td>
-<td>2383｜台光電</td>
-<td>TW</td>
-<td>銅箔基板</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">24</td>
-<td>3711｜日月光投控</td>
-<td>TW</td>
-<td>先進封裝／測試</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">25</td>
-<td>3665｜貿聯-KY</td>
-<td>TW</td>
-<td>互連</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">26</td>
-<td>3017｜奇鋐</td>
-<td>TW</td>
-<td>散熱</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">27</td>
-<td>1519｜華城</td>
-<td>TW</td>
-<td>變壓器</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">28</td>
-<td>2368｜金像電</td>
-<td>TW</td>
-<td>PCB</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">29</td>
-<td>3653｜健策</td>
-<td>TW</td>
-<td>散熱零組件</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
-<td style="text-align: right;">30</td>
-<td>3131｜弘塑</td>
-<td>TW OTC</td>
-<td>先進封裝設備</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>高風險早期瓶頸，待核</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
+<td>TSLA</td>
+<td style="text-align: right;">US$359.41 盤中</td>
+<td style="text-align: right;">67</td>
 <td style="text-align: right;">31</td>
-<td>2408｜南亞科</td>
-<td>TW</td>
-<td>DRAM</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>與 MU、DRAM 重疊待計</td>
-<td>2026-09-15</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">51</td>
+<td>排除正式布局</td>
+<td>僅觀察／不列中期／非核心</td>
+<td>基準版</td>
+<td>2026-10-21</td>
+<td>車市、能源儲能與自駕貨幣化未改善</td>
 </tr>
 <tr>
-<td style="text-align: right;">32</td>
-<td>4919｜新唐</td>
-<td>TW</td>
-<td>MCU／半導體</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>TSM／2330</td>
+<td style="text-align: right;">ADR US$414.02；2330 NT$2,385 收盤</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">61</td>
+<td>核心布局候選</td>
+<td>分批／中期持有／長期核心</td>
+<td>基準版</td>
+<td>2026-10-15</td>
+<td>先進製程需求、地緣政治、海外廠成本</td>
 </tr>
 <tr>
-<td style="text-align: right;">33</td>
-<td>0050｜元大台灣50</td>
-<td>TW</td>
-<td>大型股 ETF</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>ETF 資料待核</td>
-<td>2026-09-15</td>
+<td>NVDA</td>
+<td style="text-align: right;">US$212.27 盤中</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">66</td>
+<td>觀察</td>
+<td>不追價／中期持有候選／核心候選</td>
+<td>基準版</td>
+<td>2026-11-18</td>
+<td>雲端資本支出、競爭與出口限制</td>
 </tr>
 <tr>
-<td style="text-align: right;">34</td>
-<td>1301｜台塑</td>
-<td>TW</td>
-<td>石化</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
-</tr>
-<tr>
+<td>AMD</td>
+<td style="text-align: right;">US$503.66 盤中</td>
+<td style="text-align: right;">76</td>
 <td style="text-align: right;">35</td>
-<td>1303｜南亞</td>
-<td>TW</td>
-<td>電子材料／石化</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">70</td>
+<td>短期戰術</td>
+<td>僅戰術／不可轉核心／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-27</td>
+<td>AI GPU 市占與毛利率未改善</td>
 </tr>
 <tr>
-<td style="text-align: right;">36</td>
-<td>2301｜光寶科</td>
-<td>TW</td>
-<td>電源供應</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>GOOG</td>
+<td style="text-align: right;">US$340.92 盤中</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">55</td>
+<td>核心布局</td>
+<td>分批／中期持有／長期核心</td>
+<td>基準版</td>
+<td>2026-10-27</td>
+<td>雲端成長、AI 變現與反壟斷風險</td>
 </tr>
 <tr>
-<td style="text-align: right;">37</td>
-<td>2308｜台達電</td>
-<td>TW</td>
-<td>電力／散熱</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>VOO</td>
+<td style="text-align: right;">US$696.05 盤中</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">48</td>
+<td>正常布局</td>
+<td>僅分批／中期持有／長期核心</td>
+<td>基準版</td>
+<td>2026-10-01</td>
+<td>指數廣度與利率壓力未改善</td>
 </tr>
 <tr>
-<td style="text-align: right;">38</td>
-<td>6505｜台塑化</td>
-<td>TW</td>
-<td>煉油／石化</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td>VRT</td>
+<td style="text-align: right;">US$238.74 盤中</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">57</td>
+<td>觀察</td>
+<td>等合理價／中期布局候選／長期持有</td>
+<td>基準版</td>
+<td>2026-10-28</td>
+<td>訂單轉營收與資料中心資本支出</td>
 </tr>
 <tr>
+<td>ASML</td>
+<td style="text-align: right;">US$1,582.75 盤中</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">59</td>
+<td>觀察</td>
+<td>不追價／中期持有候選／核心候選</td>
+<td>基準版</td>
+<td>2026-10-14</td>
+<td>EUV 出貨、對中限制與訂單能見度</td>
+</tr>
+<tr>
+<td>MU</td>
+<td style="text-align: right;">US$931.50 盤中</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">68</td>
+<td>小額試單</td>
+<td>僅 1/3／中期布局候選／非核心</td>
+<td>基準版</td>
+<td>2026-09-23</td>
+<td>HBM 供給、DRAM 價格與庫存循環</td>
+</tr>
+<tr>
+<td>AXTI</td>
+<td style="text-align: right;">US$57.46 盤中</td>
+<td style="text-align: right;">57</td>
 <td style="text-align: right;">39</td>
-<td>6739｜竹陞科技</td>
-<td>TW OTC</td>
-<td>半導體自動化</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>高風險早期瓶頸，待核</td>
-<td>2026-09-15</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td>短期戰術</td>
+<td>小額戰術／不轉核心／長期排除</td>
+<td>基準版</td>
+<td>2026-11-05</td>
+<td>客戶集中、基板技術替代風險</td>
 </tr>
 <tr>
+<td>AAOI</td>
+<td style="text-align: right;">US$96.35 盤中</td>
+<td style="text-align: right;">60</td>
 <td style="text-align: right;">40</td>
-<td>2634｜漢翔</td>
-<td>TW</td>
-<td>航太／國防</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td style="text-align: right;">N/A</td>
-<td>待核</td>
-<td>不新增</td>
-<td>待核</td>
-<td>待核</td>
-<td>無前版</td>
-<td>資料驗證暫停</td>
-<td>2026-09-15</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">62</td>
+<td>短期戰術</td>
+<td>僅戰術／嚴設停損／非核心</td>
+<td>基準版</td>
+<td>2026-11-05</td>
+<td>光模組量產、毛利率與融資稀釋</td>
+</tr>
+<tr>
+<td>AEHR</td>
+<td style="text-align: right;">US$81.50 盤中</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">42</td>
+<td>短期戰術</td>
+<td>暫不新增／事件後再評估／非核心</td>
+<td>基準版</td>
+<td>2026-10-08</td>
+<td>訂單集中、碳化矽測試需求</td>
+</tr>
+<tr>
+<td>GLW</td>
+<td style="text-align: right;">US$143.72 盤中</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">55</td>
+<td>觀察</td>
+<td>等估值／中期布局候選／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-27</td>
+<td>光纖需求、顯示與特殊材料週期</td>
+</tr>
+<tr>
+<td>DRAM</td>
+<td style="text-align: right;">US$55.02 盤中</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">67</td>
+<td>小額試單</td>
+<td>僅戰術／中期觀察／非核心</td>
+<td>基準版</td>
+<td>2026-09-23</td>
+<td>與 MU、2408 併計記憶體曝險</td>
+</tr>
+<tr>
+<td>2383 台光電</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">52</td>
+<td>觀察</td>
+<td>等官方價／中期布局候選／長期持有</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>高階 CCL 份額與客戶集中</td>
+</tr>
+<tr>
+<td>3711 日月光投控</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">52</td>
+<td>正常布局</td>
+<td>分批／中期持有／長期核心候選</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>先進封裝稼動率與資本支出</td>
+</tr>
+<tr>
+<td>3665 貿聯-KY</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">51</td>
+<td>觀察</td>
+<td>等回檔／中期布局候選／長期持有</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>HPC、車用與工業訂單動能</td>
+</tr>
+<tr>
+<td>3017 奇鋐</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">53</td>
+<td>觀察</td>
+<td>不追價／中期布局候選／長期持有</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>液冷滲透率、毛利率、同業競爭</td>
+</tr>
+<tr>
+<td>1519 華城</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">50</td>
+<td>觀察</td>
+<td>小額候選／中期觀察／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>變壓器訂單與交期是否維持</td>
+</tr>
+<tr>
+<td>2368 金像電</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">51</td>
+<td>觀察</td>
+<td>等價位／中期布局候選／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>AI PCB 規格升級與產能利用率</td>
+</tr>
+<tr>
+<td>3653 健策</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">49</td>
+<td>觀察</td>
+<td>不追價／中期等待／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>高階散熱零件量產、估值回落</td>
+</tr>
+<tr>
+<td>3131 弘塑</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">46</td>
+<td>觀察</td>
+<td>僅小額候選／中期觀察／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>先進封裝設備驗收與客戶資本支出</td>
+</tr>
+<tr>
+<td>2408 南亞科</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">63</td>
+<td>短期戰術</td>
+<td>僅戰術／不可轉核心／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>DRAM 報價、庫存與資本支出</td>
+</tr>
+<tr>
+<td>4919 新唐</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">42</td>
+<td>觀察</td>
+<td>暫不新增／中期等待／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>MCU 復甦、庫存去化與毛利率</td>
+</tr>
+<tr>
+<td>0050</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">47</td>
+<td>正常布局</td>
+<td>分批／中期持有／長期核心</td>
+<td>基準版</td>
+<td>2026-10-01</td>
+<td>指數集中於 2330，應併入台積電曝險</td>
+</tr>
+<tr>
+<td>1301 台塑</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">40</td>
+<td>觀察</td>
+<td>暫不新增／週期確認／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>中國石化供給、產品價差、需求復甦</td>
+</tr>
+<tr>
+<td>1303 南亞</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">42</td>
+<td>觀察</td>
+<td>等電子材料訊號／中期觀察／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>銅箔基板材料、石化虧損與轉投資</td>
+</tr>
+<tr>
+<td>2301 光寶科</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">48</td>
+<td>正常布局候選</td>
+<td>分批候選／中期持有／長期觀察</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>電源供應器、雲端電源與毛利率</td>
+</tr>
+<tr>
+<td>2308 台達電</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">51</td>
+<td>觀察</td>
+<td>等回檔／中期布局候選／長期核心候選</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>資料中心電力與散熱成長、估值</td>
+</tr>
+<tr>
+<td>6505 台塑化</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">43</td>
+<td>觀察</td>
+<td>不新增／中期等待／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>油價、煉油利差與石化需求</td>
+</tr>
+<tr>
+<td>6739 竹陞科技</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">45</td>
+<td>小額試單候選</td>
+<td>僅 1/3 試單／中期觀察／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>半導體自動化訂單、流動性與估值</td>
+</tr>
+<tr>
+<td>2634 漢翔</td>
+<td style="text-align: right;">待核</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">46</td>
+<td>觀察</td>
+<td>事件型觀察／中期小額候選／非核心</td>
+<td>基準版</td>
+<td>2026-10-29</td>
+<td>國防預算、民航供應鏈與執行風險</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1>5. AI 瓶頸曝險與集中度控管</h1>
-<h2>5.1 目前可確認的結構性重疊</h2>
+<h2>七、新證據標的：Serenity 七問、估值與事件分析</h2>
+<p>以下僅展開有明確新市場證據或需處理高度相關性之標的；其他標的維持掃描表評級，等待公司公告、法說會或官方市場資料確認。</p>
+<hr />
+<h3>A. TSM／2330：先進製程與先進封裝的核心曝險</h3>
+<p><strong>目前評級：核心布局候選｜Q 96／V 58／C 82／M 61</strong></p>
 <table>
 <thead>
 <tr>
-<th>類別</th>
-<th>涉及單位</th>
-<th>風險規則</th>
-<th>本版判定</th>
+<th>Serenity 七問</th>
+<th>回答</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>先進製程／設備</td>
-<td>KLAC、CAMT、ASML、TSM／2330、弘塑、竹陞科技</td>
-<td>單一 AI 瓶頸環節上限總資產 25%</td>
-<td>未配置，不構成超限</td>
+<td>1. 公司解決何種不可替代問題？</td>
+<td>提供先進製程、先進封裝與量產良率，是 AI 加速器、高階 HPC 與旗艦行動晶片供應鏈的核心製造瓶頸。</td>
 </tr>
 <tr>
-<td>AI 加速器</td>
-<td>NVDA、AMD、TSM／2330</td>
-<td>高度相關公司群上限總資產 35%</td>
-<td>未配置，不構成超限</td>
+<td>2. 護城河是否可量化？</td>
+<td>領先節點良率、客戶認證、資本密度、製程學習曲線及生態系黏著度構成高門檻。</td>
 </tr>
 <tr>
-<td>資料中心電力／熱管理</td>
-<td>GEV、NVT、HUBB、POWL、MOD、VRT、奇鋐、健策、台達電、光寶科</td>
-<td>高度相關公司群上限總資產 35%</td>
-<td>未配置，不構成超限</td>
+<td>3. 成長是否由真實需求驅動？</td>
+<td>AI 加速器與 HPC 需求為主；須由月營收、法說會指引、CoWoS／先進封裝產能與客戶資本支出持續驗證。</td>
 </tr>
 <tr>
-<td>連接／PCB／光通訊</td>
-<td>APH、貿聯-KY、金像電、台光電、AAOI、GLW</td>
-<td>高度相關公司群上限總資產 35%</td>
-<td>未配置，不構成超限</td>
+<td>4. 估值是否已反映樂觀情境？</td>
+<td>部分反映。ADR 截止前盤中 US$414.02；故 V 未達正常布局 60 分。</td>
 </tr>
 <tr>
-<td>記憶體</td>
-<td>MU、DRAM、2408</td>
-<td>必須合併計算重疊曝險</td>
-<td>未配置；後續禁止分別累積而忽略總曝險</td>
+<td>5. 催化劑是什麼？</td>
+<td>季度營收、法說會資本支出、先進製程價格與先進封裝擴產進度。</td>
 </tr>
 <tr>
-<td>台灣大型權值</td>
-<td>0050、2330、台達電、日月光投控等</td>
-<td>ETF 與個股重複持股須穿透計算</td>
-<td>待 ETF 成分與權重快照核驗</td>
+<td>6. 最大反證？</td>
+<td>AI 客戶庫存修正、海外廠成本侵蝕、先進節點延誤、地緣政治風險。</td>
+</tr>
+<tr>
+<td>7. 何時證偽？</td>
+<td>若連兩季先進製程需求／毛利率指引下修且非匯率或一次性因素，降低核心目標部位。</td>
 </tr>
 </tbody>
 </table>
+<p><strong>三情境合理價與行動區：</strong></p>
+<table>
+<thead>
+<tr>
+<th>情境</th>
+<th style="text-align: right;">機率</th>
+<th>合理價框架</th>
+<th>關鍵條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲觀</td>
+<td style="text-align: right;">25%</td>
+<td>現價下方 20%–25%</td>
+<td>AI 資本支出降溫、海外廠稀釋毛利、地緣風險升高</td>
+</tr>
+<tr>
+<td>基準</td>
+<td style="text-align: right;">50%</td>
+<td>現價上方 15%–25%</td>
+<td>先進製程與封裝需求延續、毛利率守穩</td>
+</tr>
+<tr>
+<td>樂觀</td>
+<td style="text-align: right;">25%</td>
+<td>現價上方 35% 以上</td>
+<td>AI 需求超預期、產品組合與定價改善</td>
+</tr>
+</tbody>
+</table>
+<p><strong>短／中／長期：</strong><br />
+- <strong>短期 0–8 週：</strong>不追 ADR 盤中價格；以台股正式收盤及美元／台幣風險共同評估。<br />
+- <strong>中期 2–12 月：</strong>若法說確認訂單、資本支出與毛利率，維持中期主軸。<br />
+- <strong>長期 1–5 年：</strong>可作組合核心，但 <strong>TSM ADR 與 2330 視為同一曝險</strong>，含 0050 內含權重後不得重複計算。  </p>
+<p>台積電 ADR 截止前盤中下跌 0.95%，台股 2330 則於 2026-09-15 正式收 NT$2,385、上漲 NT$5；此背離反映不同市場時區與盤中風險環境，不應直接解讀為基本面改變。 (<a href="https://money.udn.com/money/story/12509/9755786?utm_source=openai">money.udn.com</a>)</p>
 <hr />
-<h1>6. 新證據標的之 Serenity 七問與估值分析</h1>
-<h2>本版結論：<strong>無展開標的</strong></h2>
-<p>依規格，僅有「新證據」標的才展開 Serenity 七問、估值與事件分析；但本版不存在符合下列條件的可稽核新證據：</p>
-<ul>
-<li>截止時間前的公司公告、SEC／交易所申報或公司 IR 文件；</li>
-<li>截止時間前可驗證的股價、成交量、法人預估或估值倍數；</li>
-<li>可對照的前版 Q／V／C／M 分數與正式評級；</li>
-<li>可判定催化劑是否遞延一季、兩季或已失效的事件時間軸。</li>
-</ul>
-<p>因此，<strong>不建立悲觀／基準／樂觀合理價，不填入預期報酬區，不設定試單區、正常布局區、高安全邊際區或失效價格。</strong></p>
+<h3>B. MU＋DRAM＋2408：記憶體曝險必須合併控管</h3>
+<p><strong>目前評級：MU 小額試單｜DRAM 小額試單｜2408 短期戰術</strong><br />
+<strong>合併風險規則：MU、DRAM ETF、2408 南亞科均納入「記憶體」同一高度相關公司群。</strong></p>
+<table>
+<thead>
+<tr>
+<th>Serenity 七問</th>
+<th>MU／DRAM／2408 合併回答</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 不可替代問題？</td>
+<td>HBM、高頻寬 DRAM 及 AI 記憶體供給是 AI 伺服器性能與供應鏈的關鍵瓶頸。</td>
+</tr>
+<tr>
+<td>2. 護城河？</td>
+<td>MU 有技術、客戶認證與 HBM 能力；DRAM ETF 無公司護城河；南亞科受規模與產品結構限制。</td>
+</tr>
+<tr>
+<td>3. 成長品質？</td>
+<td>受 AI HBM 拉動，但傳統 DRAM 仍高度循環，價格與供給調整比單季營收更重要。</td>
+</tr>
+<tr>
+<td>4. 估值風險？</td>
+<td>MU 盤中強勢但仍有景氣高點估值誤判風險；DRAM ETF 另有持股重疊與成分調整風險。</td>
+</tr>
+<tr>
+<td>5. 催化劑？</td>
+<td>HBM 出貨、合約價、庫存天數、資本支出紀律與下一次財報／法說。</td>
+</tr>
+<tr>
+<td>6. 最大反證？</td>
+<td>供給快速擴張、HBM 良率改善導致稀缺溢價下降、終端需求轉弱。</td>
+</tr>
+<tr>
+<td>7. 證偽時點？</td>
+<td>若報價、庫存與指引連兩季同步惡化，取消中期布局，僅保留或清除戰術倉。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>記憶體合併上限：</strong><br />
+- 正常情境：總資產 <strong>不超過 10%</strong>。<br />
+- 本版 Risk-off 情境：實際啟用額度 <strong>不超過總資產 4%</strong>。<br />
+- DRAM ETF 不得與 MU、2408 分開視為分散化；其成分股及重疊應每季重新核驗。  </p>
+<p>MU 截止前盤中上漲 0.81%，DRAM ETF 上漲 0.39%；此僅表示短線相對動能，未足以改變記憶體高循環、高波動的風控分類。 </p>
 <hr />
-<h1>7. NT$2,000,000 模擬配置與風險條件</h1>
-<h2>7.1 本版實際可執行配置</h2>
+<h3>C. GEV／VRT／2308：資料中心電力與散熱</h3>
+<p><strong>目前評級：GEV 小額試單；VRT 觀察；2308 台達電觀察。</strong></p>
 <table>
 <thead>
 <tr>
 <th>項目</th>
-<th style="text-align: right;">金額</th>
-<th style="text-align: right;">比例</th>
-<th>執行狀態</th>
+<th style="text-align: right;">GEV</th>
+<th style="text-align: right;">VRT</th>
+<th style="text-align: right;">2308 台達電</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>新台幣現金／等同現金</td>
-<td style="text-align: right;"><strong>NT$2,000,000</strong></td>
-<td style="text-align: right;"><strong>100%</strong></td>
-<td>保留</td>
+<td>Q</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">88</td>
 </tr>
 <tr>
-<td>長期核心</td>
-<td style="text-align: right;">NT$0</td>
-<td style="text-align: right;">0%</td>
-<td>暫停建立</td>
+<td>V</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">48</td>
 </tr>
 <tr>
-<td>中期布局</td>
-<td style="text-align: right;">NT$0</td>
-<td style="text-align: right;">0%</td>
-<td>暫停建立</td>
+<td>C</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">75</td>
 </tr>
 <tr>
-<td>短期戰術</td>
-<td style="text-align: right;">NT$0</td>
-<td style="text-align: right;">0%</td>
-<td>暫停建立</td>
+<td>本版要點</td>
+<td style="text-align: right;">電網、燃氣與電力設備需求</td>
+<td style="text-align: right;">資料中心電力與冷卻</td>
+<td style="text-align: right;">電源、散熱與工業自動化整合</td>
 </tr>
 <tr>
-<td>槓桿／反向 ETF 避險名目</td>
-<td style="text-align: right;">NT$0</td>
-<td style="text-align: right;">0%</td>
-<td>不啟用</td>
+<td>主要風險</td>
+<td style="text-align: right;">專案週期、估值、利率</td>
+<td style="text-align: right;">高預期下的訂單／毛利落差</td>
+<td style="text-align: right;">高估值、AI 資本支出集中</td>
 </tr>
 <tr>
-<td>匯率避險</td>
-<td style="text-align: right;">NT$0</td>
-<td style="text-align: right;">0%</td>
-<td>不啟用；USD/TWD 待核</td>
+<td>結論</td>
+<td style="text-align: right;">可小額試單</td>
+<td style="text-align: right;">等待安全邊際</td>
+<td style="text-align: right;">等待官方價格與估值核驗</td>
 </tr>
 </tbody>
 </table>
-<h3>此配置的性質</h3>
-<p>這不是對市場方向的「100% 現金」預測，而是因為本版的資料截止與市場時段互相衝突，無法建立可稽核的市場狀態與估值安全邊際；故採取<strong>資料完整性保護性暫停</strong>。</p>
-<h2>7.2 正常資料恢復後的資金桶上限</h2>
+<p><strong>三情境：</strong></p>
 <table>
 <thead>
 <tr>
-<th>資金桶</th>
-<th style="text-align: right;">結構目標</th>
-<th style="text-align: right;">對 NT$2,000,000 的上限金額</th>
-<th>啟動前提</th>
+<th>情境</th>
+<th style="text-align: right;">機率</th>
+<th>結論</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲觀</td>
+<td style="text-align: right;">30%</td>
+<td>利率上升、雲端資本支出遞延，電力／散熱設備估值壓縮 20% 以上</td>
+</tr>
+<tr>
+<td>基準</td>
+<td style="text-align: right;">50%</td>
+<td>資料中心電力密度上升帶動訂單，營收逐季轉化，但估值回報受限</td>
+</tr>
+<tr>
+<td>樂觀</td>
+<td style="text-align: right;">20%</td>
+<td>AI 基礎設施缺口超預期、產能緊張與定價提升同步發生</td>
+</tr>
+</tbody>
+</table>
+<p><strong>風控判斷：</strong>銅價代理指標上行有利電網與設備需求，但美債長端壓力不利高估值資本財。本版不以題材增加 VRT、GEV、台達電的合計部位；待估值或訂單驗證後再行調整。 </p>
+<hr />
+<h3>D. NVDA／AMD：AI 加速器品質與估值分化</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th style="text-align: right;">NVDA</th>
+<th style="text-align: right;">AMD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q／V／C／M</td>
+<td style="text-align: right;">94／53／82／66</td>
+<td style="text-align: right;">76／35／72／70</td>
+</tr>
+<tr>
+<td>評級</td>
+<td style="text-align: right;">觀察，核心候選</td>
+<td style="text-align: right;">短期戰術</td>
+</tr>
+<tr>
+<td>關鍵優勢</td>
+<td style="text-align: right;">平台、生態系、軟硬體整合</td>
+<td style="text-align: right;">產品迭代與追趕催化</td>
+</tr>
+<tr>
+<td>主要風險</td>
+<td style="text-align: right;">估值、雲端資本支出、出口限制</td>
+<td style="text-align: right;">高估值、執行與市占不確定性</td>
+</tr>
+<tr>
+<td>操作邊界</td>
+<td style="text-align: right;">不追價；回檔且基本面不變才討論</td>
+<td style="text-align: right;">僅用短期戰術桶，不得轉為核心</td>
+</tr>
+</tbody>
+</table>
+<p>NVDA 截止前盤中上漲 0.62%，AMD 上漲 2.08%；然而 AMD 的本版估值吸引力僅 35 分，短線動能不得自動轉化為長期品質評級。 </p>
+<hr />
+<h2>八、NT$2,000,000 模擬配置：Risk-off 防守版</h2>
+<h3>1. 資金結構</h3>
+<table>
+<thead>
+<tr>
+<th>類別</th>
+<th style="text-align: right;">金額</th>
+<th style="text-align: right;">比例</th>
+<th>規則</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>現金／貨幣型等待資金</td>
+<td style="text-align: right;"><strong>NT$1,200,000</strong></td>
+<td style="text-align: right;"><strong>60%</strong></td>
+<td>位於 Risk-off 規定的 45%–70% 區間</td>
+</tr>
+<tr>
+<td>長期核心桶</td>
+<td style="text-align: right;">NT$440,000</td>
+<td style="text-align: right;">22%</td>
+<td>為已投入資金的 55%</td>
+</tr>
+<tr>
+<td>中期布局桶</td>
+<td style="text-align: right;">NT$240,000</td>
+<td style="text-align: right;">12%</td>
+<td>為已投入資金的 30%</td>
+</tr>
+<tr>
+<td>短期戰術桶</td>
+<td style="text-align: right;">NT$120,000</td>
+<td style="text-align: right;">6%</td>
+<td>為已投入資金的 15%</td>
+</tr>
+<tr>
+<td><strong>合計</strong></td>
+<td style="text-align: right;"><strong>NT$2,000,000</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td>最大容忍組合回撤：15%</td>
+</tr>
+</tbody>
+</table>
+<h3>2. 模擬標的配置</h3>
+<table>
+<thead>
+<tr>
+<th>時間桶</th>
+<th>標的</th>
+<th style="text-align: right;">金額</th>
+<th style="text-align: right;">總資產比</th>
+<th>目的與風險條件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>長期核心</td>
-<td style="text-align: right;">55%</td>
-<td style="text-align: right;">NT$1,100,000</td>
-<td>僅限 Q≥80、V≥60、C≥50 的核心布局標的</td>
+<td>VOO</td>
+<td style="text-align: right;">NT$150,000</td>
+<td style="text-align: right;">7.5%</td>
+<td>美國大盤核心；市場廣度惡化時暫停加碼</td>
+</tr>
+<tr>
+<td>長期核心</td>
+<td>0050</td>
+<td style="text-align: right;">NT$80,000</td>
+<td style="text-align: right;">4.0%</td>
+<td>台股大型權值；須將內含台積電曝險併計</td>
+</tr>
+<tr>
+<td>長期核心</td>
+<td>TSM／2330</td>
+<td style="text-align: right;">NT$100,000</td>
+<td style="text-align: right;">5.0%</td>
+<td>ADR 與台股只能擇一執行，禁止重複曝險</td>
+</tr>
+<tr>
+<td>長期核心</td>
+<td>GOOG</td>
+<td style="text-align: right;">NT$60,000</td>
+<td style="text-align: right;">3.0%</td>
+<td>現金流與 AI 平台核心</td>
+</tr>
+<tr>
+<td>長期核心</td>
+<td>KLAC</td>
+<td style="text-align: right;">NT$50,000</td>
+<td style="text-align: right;">2.5%</td>
+<td>半導體設備核心候選，等估值改善再提高</td>
 </tr>
 <tr>
 <td>中期布局</td>
-<td style="text-align: right;">30%</td>
-<td style="text-align: right;">NT$600,000</td>
-<td>訂單、產能、毛利與催化路徑可驗證</td>
+<td>GEV</td>
+<td style="text-align: right;">NT$60,000</td>
+<td style="text-align: right;">3.0%</td>
+<td>僅分批、以訂單轉營收驗證</td>
+</tr>
+<tr>
+<td>中期布局</td>
+<td>VRT</td>
+<td style="text-align: right;">NT$40,000</td>
+<td style="text-align: right;">2.0%</td>
+<td>高估值資料中心基建，僅觀察型配置</td>
+</tr>
+<tr>
+<td>中期布局</td>
+<td>2308 台達電</td>
+<td style="text-align: right;">NT$40,000</td>
+<td style="text-align: right;">2.0%</td>
+<td>待官方收盤、估值與法說核驗</td>
+</tr>
+<tr>
+<td>中期布局</td>
+<td>3711 日月光投控</td>
+<td style="text-align: right;">NT$35,000</td>
+<td style="text-align: right;">1.75%</td>
+<td>先進封裝分散曝險</td>
+</tr>
+<tr>
+<td>中期布局</td>
+<td>2383 台光電</td>
+<td style="text-align: right;">NT$35,000</td>
+<td style="text-align: right;">1.75%</td>
+<td>高階材料；注意客戶集中</td>
+</tr>
+<tr>
+<td>中期布局</td>
+<td>MU</td>
+<td style="text-align: right;">NT$30,000</td>
+<td style="text-align: right;">1.5%</td>
+<td>記憶體合併曝險的一部分</td>
 </tr>
 <tr>
 <td>短期戰術</td>
-<td style="text-align: right;">15%</td>
-<td style="text-align: right;">NT$300,000</td>
-<td>僅限 Q 55–64 且有明確事件，不能轉為核心</td>
+<td>AMD</td>
+<td style="text-align: right;">NT$35,000</td>
+<td style="text-align: right;">1.75%</td>
+<td>僅戰術資金；不得以攤平轉核心</td>
+</tr>
+<tr>
+<td>短期戰術</td>
+<td>DRAM</td>
+<td style="text-align: right;">NT$30,000</td>
+<td style="text-align: right;">1.5%</td>
+<td>與 MU、2408 合併控管</td>
+</tr>
+<tr>
+<td>短期戰術</td>
+<td>2408 南亞科</td>
+<td style="text-align: right;">NT$20,000</td>
+<td style="text-align: right;">1.0%</td>
+<td>DRAM 高波動試單，不得加碼追價</td>
+</tr>
+<tr>
+<td>短期戰術</td>
+<td>GLW</td>
+<td style="text-align: right;">NT$20,000</td>
+<td style="text-align: right;">1.0%</td>
+<td>光纖／材料的低比重觀察試單</td>
+</tr>
+<tr>
+<td>短期戰術</td>
+<td>1519 華城</td>
+<td style="text-align: right;">NT$15,000</td>
+<td style="text-align: right;">0.75%</td>
+<td>電網題材試單，待正式價格核驗</td>
+</tr>
+</tbody>
+</table>
+<h3>3. 配置風控檢查</h3>
+<table>
+<thead>
+<tr>
+<th>檢查項目</th>
+<th>結果</th>
+<th>規則</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>單一核心龍頭</td>
+<td>TSM／2330 5.0%</td>
+<td>低於 12%–15% 上限</td>
+</tr>
+<tr>
+<td>一般正式個股</td>
+<td>最大 GEV 3.0%</td>
+<td>低於 6%–10% 上限</td>
 </tr>
 <tr>
 <td>高風險早期瓶頸</td>
-<td style="text-align: right;">單檔 2%–4%</td>
-<td style="text-align: right;">NT$40,000–80,000</td>
-<td>AXTI、AAOI、AEHR、3131、6739 等僅在分數與催化合格時</td>
+<td>本版未配置 AXTI／AAOI／AEHR</td>
+<td>符合 2%–4% 上限與 Risk-off 紀律</td>
 </tr>
 <tr>
-<td>核心龍頭單檔</td>
-<td style="text-align: right;">單檔 12%–15%</td>
-<td style="text-align: right;">NT$240,000–300,000</td>
-<td>須通過估值、集中度及情境回撤檢驗</td>
+<td>記憶體群組</td>
+<td>MU 1.5%＋DRAM 1.5%＋2408 1.0%＝<strong>4.0%</strong></td>
+<td>低於本版 4% 啟用上限</td>
 </tr>
 <tr>
-<td>一般正式股</td>
-<td style="text-align: right;">單檔 6%–10%</td>
-<td style="text-align: right;">NT$120,000–200,000</td>
-<td>須通過正常布局門檻</td>
+<td>半導體直接曝險</td>
+<td>TSM、KLAC、3711、MU、AMD、DRAM、2408</td>
+<td>約 14.25%，未超過單一 AI 瓶頸 25%</td>
 </tr>
 <tr>
-<td>單一 AI 瓶頸環節</td>
-<td style="text-align: right;">合計 ≤25%</td>
-<td style="text-align: right;">≤NT$500,000</td>
-<td>穿透計算後不得超限</td>
+<td>高度相關 AI 群</td>
+<td>含資料中心、半導體、台灣電子材料</td>
+<td>約 28%–31%</td>
 </tr>
 <tr>
-<td>高度相關公司群</td>
-<td style="text-align: right;">合計 ≤35%</td>
-<td style="text-align: right;">≤NT$700,000</td>
-<td>穿透計算後不得超限</td>
+<td>槓桿／反向 ETF</td>
+<td>0%</td>
+<td>未使用；僅危機避險才評估</td>
 </tr>
 <tr>
-<td>槓桿／放空／反向 ETF</td>
-<td style="text-align: right;">正常 ≤20%；危機 ≤30%</td>
-<td style="text-align: right;">≤NT$400,000／600,000</td>
-<td>僅可避險、每日重設風險另行揭露</td>
-</tr>
-</tbody>
-</table>
-<h2>7.3 試單額度</h2>
-<table>
-<thead>
-<tr>
-<th>條件</th>
-<th style="text-align: right;">本版額度</th>
-<th>理由</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>資料驗證暫停</td>
-<td style="text-align: right;"><strong>NT$0</strong></td>
-<td>沒有可核驗的市場狀態、估值、價格及催化劑</td>
-</tr>
-<tr>
-<td>正式 Risk-off 後之小額試單</td>
-<td style="text-align: right;">待核</td>
-<td>僅可使用原預定部位的 1/3，且須達小額試單門檻</td>
-</tr>
-<tr>
-<td>危機模式</td>
-<td style="text-align: right;">NT$0 一般個股新倉</td>
-<td>僅防守、避險或等待流動性轉折</td>
+<td>匯率避險</td>
+<td>待核</td>
+<td>美股部位約 21.25%，USD/TWD 未核前不主動放大美元曝險</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1>8. 中國、供應鏈與哨兵監測</h1>
+<h2>九、試單額度、加碼與退出規則</h2>
+<h3>本版可執行試單額度</h3>
 <table>
 <thead>
 <tr>
-<th>哨兵／區域</th>
-<th>監控目的</th>
-<th>對台美股的傳導路徑</th>
+<th>項目</th>
+<th style="text-align: right;">額度</th>
+<th>條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全組合新增試單總額</td>
+<td style="text-align: right;"><strong>最多 NT$80,000</strong></td>
+<td>僅在 Risk-off 的正常預定部位 1/3 原則內</td>
+</tr>
+<tr>
+<td>單一正式個股首次試單</td>
+<td style="text-align: right;">NT$15,000–30,000</td>
+<td>Q≥65、V≥45、存在可靠催化劑</td>
+</tr>
+<tr>
+<td>高波動標的首次試單</td>
+<td style="text-align: right;">最多 NT$20,000</td>
+<td>AXTI、AAOI、AEHR、2408、DRAM 等不得攤平</td>
+</tr>
+<tr>
+<td>同一日 AI 高相關群新增</td>
+<td style="text-align: right;">最多 NT$40,000</td>
+<td>避免在市場廣度惡化時集中加碼</td>
+</tr>
+<tr>
+<td>加碼條件</td>
+<td style="text-align: right;">不以價格上漲為唯一理由</td>
+<td>必須有新基本面證據、估值安全邊際或催化確認</td>
+</tr>
+<tr>
+<td>暫停新增條件</td>
+<td style="text-align: right;">全球或台灣升為危機</td>
+<td>暫停一般個股新倉，只可防守或等待流動性轉折</td>
+</tr>
+</tbody>
+</table>
+<h3>失效與減碼條件</h3>
+<ol>
+<li><strong>基本面失效：</strong>訂單、毛利、技術路線或市占連續兩季與投資論點背離。  </li>
+<li><strong>時間失效：</strong>已定義催化劑延遲一季為黃燈；延遲兩季即降低催化分與目標部位；連續兩季無可信解釋則降評。  </li>
+<li><strong>組合失效：</strong>組合自高點回撤達 <strong>10%</strong> 時，停止戰術加碼並重估相關群組；接近 <strong>15%</strong> 時，優先提高現金與減少高 beta 部位。  </li>
+<li><strong>技術／流動性失效：</strong>高波動小型股跌破事件後關鍵區且無基本面支持，不使用長期資金攤平。  </li>
+</ol>
+<hr />
+<h2>十、供應鏈哨兵</h2>
+<table>
+<thead>
+<tr>
+<th>哨兵</th>
+<th>監控重點</th>
+<th>對正式池的傳導</th>
 <th>本版狀態</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>中國長鑫 CXMT</td>
-<td>DRAM 供給、價格與中國記憶體自主化</td>
-<td>MU、2408、DRAM ETF 與伺服器 BOM 成本</td>
+<td>DRAM 擴產、產品節點、政策支持</td>
+<td>MU、DRAM、2408 的中長期供給壓力</td>
 <td>待核</td>
 </tr>
 <tr>
 <td>寒武紀 688256.SH</td>
-<td>中國 AI 加速器與政策資本支出</td>
-<td>NVDA、AMD、TSM／2330 及中國需求預期</td>
+<td>中國 AI 加速器、國產替代、政策資金</td>
+<td>NVDA、AMD、TSM 的中國需求與競爭結構</td>
 <td>待核</td>
 </tr>
 <tr>
 <td>Prysmian PRY.MI</td>
-<td>電網線纜、歐洲電力基建需求</td>
-<td>GEV、HUBB、NVT、POWL 與銅需求</td>
+<td>電纜、電網投資、訂單與產能</td>
+<td>GEV、HUBB、NVT、1519 的全球電網景氣驗證</td>
 <td>待核</td>
 </tr>
 <tr>
 <td>古河電工 5801.T</td>
-<td>光纖、材料與日本供應鏈景氣</td>
-<td>GLW、AAOI、台灣光通訊／材料鏈</td>
+<td>光纖、材料、電力與通訊供應鏈</td>
+<td>GLW、AAOI、台灣光電／材料鏈</td>
 <td>待核</td>
-</tr>
-<tr>
-<td>中國 A 股與產業政策</td>
-<td>需求、供給、出口管制與補貼政策</td>
-<td>半導體、記憶體、PCB、材料及石化循環</td>
-<td>待核；下版需列政策來源與日期</td>
 </tr>
 </tbody>
 </table>
+<p><strong>中國傳導判斷：</strong>中國 AI 國產替代與記憶體供應鏈若加速，短期未必直接取代全球先進 AI 鏈，但會提高成熟製程、記憶體與特定終端市場的定價壓力。因此，MU／DRAM／2408 不可因單日價格表現而提高至核心部位。</p>
 <hr />
-<h1>9. 資料來源登錄</h1>
-<p>以下為下版完成正式數據核驗時應優先使用的來源。正式版本將以<strong>交易所、公司 IR、SEC、ETF 發行商及政府統計資料</strong>為第一來源；新聞僅作交叉驗證。</p>
+<h2>十一、未配置但需追蹤的研究池</h2>
 <table>
 <thead>
 <tr>
-<th>類型</th>
-<th>官方來源 URL</th>
-<th>用途</th>
+<th>分類</th>
+<th>優先追蹤標的</th>
+<th>觸發條件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>台灣證交所 TWSE</td>
-<td>https://www.twse.com.tw/zh/</td>
-<td>加權指數、上市個股、電子／半導體指數、市場統計</td>
+<td>半導體檢測／先進封裝</td>
+<td>AMKR、TER、ONTO、2449、6223、6515、3583、6640</td>
+<td>訂單、測試需求與先進封裝資本支出證據</td>
 </tr>
 <tr>
-<td>櫃買中心 TPEx</td>
-<td>https://www.tpex.org.tw/</td>
-<td>櫃買指數、上櫃個股、3131 與 6739 等資料</td>
+<td>光通訊</td>
+<td>COHR、LITE、CIEN、CRDO</td>
+<td>800G／1.6T 出貨與毛利率確認</td>
 </tr>
 <tr>
-<td>美國 SEC EDGAR</td>
-<td>https://www.sec.gov/edgar/search/</td>
-<td>10-Q、10-K、8-K、公司申報與重大事件</td>
+<td>網通／資料中心</td>
+<td>AVGO、MRVL、ANET</td>
+<td>雲端資本支出與客戶集中風險重估</td>
 </tr>
 <tr>
-<td>美國財政部利率資料</td>
-<td>https://home.treasury.gov/resource-center/data-chart-center/interest-rates</td>
-<td>美債殖利率曲線與正式日終資料</td>
+<td>電網與電力</td>
+<td>ETN、PWR、CEG、VST</td>
+<td>利率、電價、併網與設備訂單同步驗證</td>
 </tr>
 <tr>
-<td>FRED／ICE BofA 信用利差</td>
-<td>https://fred.stlouisfed.org/series/BAMLC0A0CM</td>
-<td>投資級信用利差與流動性監控</td>
-</tr>
-<tr>
-<td>Nasdaq 指數資料</td>
-<td>https://indexes.nasdaqomx.com/</td>
-<td>Nasdaq 100、SOX 等美國科技／半導體指數核驗</td>
-</tr>
-<tr>
-<td>S&amp;P Dow Jones Indices</td>
-<td>https://www.spglobal.com/spdji/</td>
-<td>S&amp;P 500 與指數方法資料</td>
-</tr>
-<tr>
-<td>Vanguard ETF 官方頁</td>
-<td>https://investor.vanguard.com/investment-products/etfs</td>
-<td>VOO 持股、費用率、資產規模與追蹤資料</td>
-</tr>
-<tr>
-<td>Roundhill Investments</td>
-<td>https://www.roundhillinvestments.com/</td>
-<td>DRAM ETF 持股、費用、集中度與再平衡資料</td>
-</tr>
-<tr>
-<td>元大投信</td>
-<td>https://www.yuantafunds.com/</td>
-<td>0050 成分、規模、費用與追蹤資訊</td>
-</tr>
-<tr>
-<td>公司 IR／財報</td>
-<td>各公司官方 Investor Relations 頁面</td>
-<td>營收、財測、訂單、產能、毛利率與資本配置</td>
+<td>供應鏈設備</td>
+<td>辛耘、均華</td>
+<td>台灣先進封裝擴產與驗收進度</td>
 </tr>
 </tbody>
 </table>
-<p>TWSE 官方頁面明示其提供加權指數、個股、市場統計與相關指數資訊；下版應從該等可追溯頁面鎖定正式收盤日期與資料時間。(<a href="https://www.twse.com.tw/IIH2/zh/market/stock.html?utm_source=openai">twse.com.tw</a>)</p>
 <hr />
-<h1>10. 本版限制</h1>
+<h2>十二、績效與基準：本版狀態</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模擬組合起始淨值</td>
+<td>NT$2,000,000</td>
+</tr>
+<tr>
+<td>本版可比前期淨值</td>
+<td>待核；本版為基準建檔</td>
+</tr>
+<tr>
+<td>美股報酬（美元）</td>
+<td>待下一正式收盤建立</td>
+</tr>
+<tr>
+<td>USD/TWD 變動</td>
+<td>待核</td>
+</tr>
+<tr>
+<td>美股台幣實際報酬</td>
+<td>待匯率核驗後計算</td>
+</tr>
+<tr>
+<td>台股上市基準</td>
+<td>加權指數與電子／半導體指數；電子／半導體指數待核</td>
+</tr>
+<tr>
+<td>上櫃基準</td>
+<td>櫃買指數，待核</td>
+</tr>
+<tr>
+<td>美股 AI 基準</td>
+<td>SOX／Nasdaq 100／S&amp;P 500</td>
+</tr>
+<tr>
+<td>ETF 基準</td>
+<td>各 ETF 官方追蹤指數</td>
+</tr>
+<tr>
+<td>整體組合基準</td>
+<td>依實際美台投入比例建立動態混合基準；待第一個完整比較期</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>十三、本版限制</h2>
 <ol>
-<li><strong>時間用途不一致：</strong>2026-09-15 00:57 台北時間對應 2026-09-14 12:57 美東時間，為美股盤中，而非美股開盤前。  </li>
-<li><strong>無法使用美股當日收盤數據：</strong>美股正式收盤、完整量價、日終美債殖利率及日終跨資產價格均屬本次截止後資訊。  </li>
-<li><strong>台股與亞洲收盤資料未完成來源鎖定：</strong>雖市場時段理論上已結束，仍未取得可稽核且明確帶有日期／時間的完整快照。  </li>
-<li><strong>缺少前版基準：</strong>無法落實「分數變動超過 5 分才改評級」、前判斷錯誤檢討、催化遞延追蹤與模擬績效比較。  </li>
-<li><strong>缺少持倉與成本：</strong>本版僅能提供一般資金配置框架，不能計算實際部位、未實現損益、稅費、滑價與已實現回撤。  </li>
-<li><strong>本版所有 N/A 分數均不是負面判定：</strong>禁止將其誤讀為賣出訊號；其僅表示資料未完成驗證。  </li>
-<li><strong>不得以本版建立個股、ETF、槓桿 ETF、反向 ETF 或匯率避險新部位。</strong></li>
+<li><strong>美股仍在盤中：</strong>所有美股價格均為截止前快照，不得替代 2026-09-15 美國正式收盤。  </li>
+<li><strong>台股個別價格核驗不足：</strong>除加權指數與 2330 外，本版未完成其餘台股／上櫃個別收盤價官方逐檔核驗，均標示「待核」。  </li>
+<li><strong>USD/TWD、實際美債殖利率、信用利差：</strong>本版使用美元、長債與高收益債 ETF 作方向代理，正式數值待政府／FRED 序列核驗。  </li>
+<li><strong>估值屬情境式框架：</strong>未納入使用者實際持股、成本、稅費、交易摩擦、流動性限制及個人稅務。  </li>
+<li><strong>價格供應商差異：</strong>美股資料可能涉及拆分調整、延遲或供應商計算口徑；正式交易前應交叉核對券商與交易所報價。  </li>
+<li><strong>沒有前次正式版本：</strong>本版無法誠實呈現正式評級變動、前次預測績效或先前錯誤率；後續將以本版作為比較基準。  </li>
 </ol>
 <hr />
-<h1>11. 下一驗證時間</h1>
+<h2>十四、下一驗證時間</h2>
 <table>
 <thead>
 <tr>
 <th>驗證項目</th>
-<th>下一驗證時間</th>
+<th>下一時間</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>台股／亞洲正式收盤快照、TWSE／TPEx 個股與指數資料</td>
-<td><strong>2026-09-15 08:00 Asia/Taipei 前</strong></td>
+<td>美國正式收盤、利率、美元與跨資產重整</td>
+<td><strong>2026-09-16 06:30（Asia/Taipei）後</strong></td>
 </tr>
 <tr>
-<td>美國 2026-09-14 正式收盤、美債日終殖利率、信用利差與美元資料</td>
-<td><strong>2026-09-15 08:00 Asia/Taipei 前</strong></td>
+<td>台股早報與美股正式收盤影響</td>
+<td><strong>2026-09-16 08:00（Asia/Taipei）前</strong></td>
 </tr>
 <tr>
-<td>40 單位 Q／V／C／M 初始基準、估值情境、催化時間軸、ETF 穿透重疊</td>
-<td><strong>2026-09-15 20:00 Asia/Taipei 前之晚報重建版</strong></td>
+<td>台股個別正式收盤價、櫃買資料核驗</td>
+<td><strong>2026-09-16 08:00（Asia/Taipei）前</strong></td>
 </tr>
 <tr>
-<td>前版績效、錯誤追蹤與評級變動制度</td>
-<td><strong>收到前版分數／持倉基準後立即建立</strong></td>
+<td>MU 財報／記憶體催化驗證</td>
+<td><strong>2026-09-23，確切公布時間待公司 IR 核驗</strong></td>
+</tr>
+<tr>
+<td>TSMC、ASML 與半導體設備法說／營收驗證</td>
+<td><strong>2026-10-14 至 2026-10-29 區間，依公司公告核驗</strong></td>
+</tr>
+<tr>
+<td>週報完整 40 單位 Serenity、護城河與三情境重評</td>
+<td><strong>2026-09-19 12:00（Asia/Taipei）前</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>本版最終操作結論：維持 NT$2,000,000 現金；試單額度 NT$0；等待可稽核的正式收盤資料與前版基準完成後，才恢復市場狀態判定與個股布局程序。</strong></p>
 <h2>API搜尋來源</h2>
 <ul>
-<li><a href="https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics?utm_source=openai">Interest Rate Statistics | U.S. Department of the Treasury</a></li>
-<li><a href="https://www.twse.com.tw/IIH2/zh/market/stock.html?utm_source=openai">指數資訊 - 投資資訊中心 - 臺灣證券交易所</a></li>
-<li><a href="https://fred.stlouisfed.org/graph/?g=PmO0&amp;utm_source=openai">ICE BofA US Corporate Index Option-Adjusted Spread | FRED | St. Louis Fed</a></li>
+<li><a href="https://money.udn.com/money/story/12509/9755786?utm_source=openai">台股收盤／跌351.03點收45,511.49點 台積電收2,385元漲5元 | AI 人機協作 | 證券 | 經濟日報</a></li>
 </ul></body></html>
